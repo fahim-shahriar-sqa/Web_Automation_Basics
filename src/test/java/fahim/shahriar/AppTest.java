@@ -1,38 +1,21 @@
 package fahim.shahriar;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
+import org.testng.annotations.Test;
+
+public class AppTest extends DriverSetup{
+
+    @Test
+    public void testWebPageLoad(){
+        driver.get("https://www.google.com/");
+        System.out.println(driver.getCurrentUrl());
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
+    @Test
+    public void testWebPageTitle(){
+        driver.get("https://www.google.com/");
+        System.out.println(driver.getTitle());
+        System.out.println(driver.getPageSource());
     }
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
 }
