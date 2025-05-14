@@ -48,6 +48,19 @@ This repository contains the basic concepts and commonly used commands in web au
 | By Link Text | `driver.findElement(By.linkText("elementlinkText"));` |
 | By Partial Link Text | `driver.findElement(By.partialLinkText("partialLinkText"));` |
 
+## 📝 Example Automation Steps
+
+1. Open the browser and navigate to [https://example.com](https://example.com).
+2. Maximize the browser window.
+3. Print the current URL and page title.
+4. Open a new tab and go to [https://www.wikipedia.org](https://www.wikipedia.org).
+5. Switch between tabs.
+6. In Wikipedia, locate the search input by its name and type "Selenium (software)".
+7. Submit the search form.
+8. Refresh the page.
+9. Close the current tab.
+10. Go back to the original tab and close it using `quit()`.
+
 ---
 
 ## 🛠 Technologies Used
