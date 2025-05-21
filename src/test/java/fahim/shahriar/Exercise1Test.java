@@ -40,7 +40,10 @@ public class Exercise1Test extends DriverSetup{
         Thread.sleep(1000);
         searchText.sendKeys("Selenium (software)");
         Thread.sleep(1000);
-        driver.findElement(By.cssSelector(".pure-button.pure-button-primary-progressive")).click();
+
+        driver.findElement(By.className("sprite svg-search-icon")).click();
+        Thread.sleep(1000);
+        //driver.findElement(By.cssSelector(".pure-button.pure-button-primary-progressive")).click();
         Thread.sleep(1000);
         driver.navigate().refresh();
         Thread.sleep(3000);
