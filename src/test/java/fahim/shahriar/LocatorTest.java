@@ -13,7 +13,6 @@ public class LocatorTest extends DriverSetup{
         driver.get("https://www.google.com/");
         driver.manage().window().maximize();
 
-         /*
 
         WebElement searchArea = driver.findElement(By.id("APjFqb"));
         WebElement searchArea = driver.findElement(By.name("q"));
@@ -39,7 +38,7 @@ public class LocatorTest extends DriverSetup{
         for (WebElement child : children){
             System.out.println("Footers : " + child.getText());
         }
-        */
+
 
         // cssSelector
         driver.findElement(By.cssSelector("a[class='pHiOh']")).click();
@@ -75,12 +74,14 @@ public class LocatorTest extends DriverSetup{
         driver.findElement(By.xpath("//a[text()=\"Business\"]/preceding-sibling::a")).click();
 
 
-
-
-
         driver.findElement(By.cssSelector("a[class='pHiOh']")).click();
         Thread.sleep(3000);
         driver.navigate().back();
+
+        WebElement openTab = driver.findElement(By.cssSelector("#opentab"));
+        String color = openTab.getCssValue("background-color");
+        System.out.println(color);
+
 
     }
 }
