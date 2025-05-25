@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class LocatorTest extends DriverSetup{
+public class T05_LocatorTest extends T00_DriverSetup {
 
     @Test
     public void locatorTest() throws InterruptedException {
@@ -15,10 +15,10 @@ public class LocatorTest extends DriverSetup{
 
 
         WebElement searchArea = driver.findElement(By.id("APjFqb"));
-        WebElement searchArea = driver.findElement(By.name("q"));
-        WebElement searchArea = driver.findElement(By.tagName("textarea"));
-        WebElement searchArea = driver.findElement(By.className("gLFyf"));
-        WebElement searchArea = driver.findElement(By.className("q"));
+        WebElement searchArea2 = driver.findElement(By.name("q"));
+        WebElement searchArea3 = driver.findElement(By.tagName("textarea"));
+        WebElement searchArea4 = driver.findElement(By.className("gLFyf"));
+        WebElement searchArea5 = driver.findElement(By.className("q"));
 
         searchArea.sendKeys("Bangladesh");
         Thread.sleep(3000);
@@ -81,7 +81,5 @@ public class LocatorTest extends DriverSetup{
         WebElement openTab = driver.findElement(By.cssSelector("#opentab"));
         String color = openTab.getCssValue("background-color");
         System.out.println(color);
-
-
     }
 }

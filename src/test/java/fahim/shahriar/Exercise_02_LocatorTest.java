@@ -2,7 +2,7 @@ package fahim.shahriar;
 
 import org.testng.annotations.Test;
 
-public class LocatorTestExercise extends DriverSetup{
+public class Exercise_02_LocatorTest extends T00_DriverSetup {
 
     /*
  Task

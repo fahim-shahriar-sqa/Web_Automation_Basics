@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
 import org.testng.annotations.Test;
 
-public class Exercise1Test extends DriverSetup{
+public class Exercise_01 extends T00_DriverSetup {
 
     /*
      1: Open the browser and navigate to https://example.com
@@ -43,7 +43,7 @@ public class Exercise1Test extends DriverSetup{
 
         driver.findElement(By.className("sprite svg-search-icon")).click();
         Thread.sleep(1000);
-        //driver.findElement(By.cssSelector(".pure-button.pure-button-primary-progressive")).click();
+        driver.findElement(By.cssSelector(".pure-button.pure-button-primary-progressive")).click();
         Thread.sleep(1000);
         driver.navigate().refresh();
         Thread.sleep(3000);

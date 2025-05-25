@@ -1,12 +1,11 @@
 package fahim.shahriar;
 
-
 import org.openqa.selenium.WindowType;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 
-public class HandleBrowserTest extends DriverSetup{
+public class T04_HandleBrowserTest extends T00_DriverSetup {
 
     @Test
     public void testBrowserTask() throws InterruptedException {

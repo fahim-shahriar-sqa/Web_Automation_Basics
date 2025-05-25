@@ -1,9 +1,8 @@
 package fahim.shahriar;
 
-
 import org.testng.annotations.Test;
 
-public class AppTest extends DriverSetup{
+public class T01_WebPageLoad extends T00_DriverSetup {
 
     @Test
     public void testWebPageLoad(){
